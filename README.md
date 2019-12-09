@@ -5,7 +5,7 @@ git init](http://electron.atom.io/)
 ## Usage
 
 ```sh
-$ docker run -p 3000:3000 junaida2/electron-pdf
+$ docker run -p 9010:3000 junaida2/electron-pdf
 ```
 
 
@@ -18,7 +18,7 @@ $ docker run -p 3000:3000 junaida2/electron-pdf
 `url`: Absolute url to the webpage you want to have rendered.
 
 ```sh
-$ curl "http://localhost:3000/https://en.wikipedia.org/wiki/Docker_(software)" > docker.pdf
+$ curl "http://localhost:9010/https://en.wikipedia.org/wiki/Docker_(software)" > docker.pdf
 ```
 
 <hr>
@@ -28,8 +28,8 @@ $ curl "http://localhost:3000/https://en.wikipedia.org/wiki/Docker_(software)" >
 Send a html string as the request body.
 
 ```sh
-$ curl -X POST --data '{"html":"<b>Hello</b> World"}' http://localhost:3000/ > hello.pdf
-$ curl -X POST -H "x-pdf-orientation: landscape" --data '{"html":"<b>Hello</b> World"}' http://localhost:3000/ > hello.pdf
+$ curl -X POST --data '{"html":"<b>Hello</b> World"}' http://localhost:9010/ > hello.pdf
+$ curl -X POST -H "x-pdf-orientation: landscape" --data '{"html":"<b>Hello</b> World"}' http://localhost:9010/ > hello.pdf
 ```
 
 
